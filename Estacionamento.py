@@ -1,3 +1,5 @@
+# Simulador-Estacionamento
+
 lista_vagas: list[bool] = [False] * 30
 
 while True:
