@@ -12,8 +12,9 @@ while True:
     indice_vaga = int(input("Escolha qual vaga você quer estacionar: "))
     indice_vaga = indice_vaga - 1
 
-    if indice_vaga > 29 or indice_vaga < 0:
+    if not (0 <= indice_vaga <= 29):
         print("Existe apenas 30 vagas, insira o número correspondente")
+        input("Pressione ENTER para continuar...")
         continue
 
     if not lista_vagas[indice_vaga]:
